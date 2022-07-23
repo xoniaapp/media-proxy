@@ -9,6 +9,6 @@ pub struct Info {
 
 pub async fn get() -> impl Responder {
     web::Json(Info {
-        version: env!("CARGO_PKG_VERSION"),
+        media_proxy: env!("CARGO_PKG_VERSION"),
     })
 }
